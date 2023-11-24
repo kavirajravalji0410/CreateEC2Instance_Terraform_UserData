@@ -23,9 +23,9 @@ The Terraform configuration in this repository sets up:
    ```bash
    git clone https://github.com/your-username/your-repo.git
    cd your-repo
-# Initialize Terraform:
+## Initialize Terraform:
 terraform init
-# Review and apply the Terraform configuration:
+## Review and apply the Terraform configuration:
 
 terraform plan
 
@@ -33,12 +33,12 @@ terraform apply
 
 Access your EC2 instance and verify the setup.
 
-# Customization
+## Customization
 Modify the userdata.sh script to suit your specific setup requirements.
 Adjust the paths and commands in the Terraform files to reflect your configurations.
 Customize security groups, instance types, and other parameters as needed in the Terraform configuration files.
 
-# Cleanup
+## Cleanup
 To avoid incurring charges, destroy the created resources when they are no longer needed:
 
 terraform destroy
