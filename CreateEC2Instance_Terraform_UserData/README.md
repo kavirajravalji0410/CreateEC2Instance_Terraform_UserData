@@ -26,8 +26,11 @@ The Terraform configuration in this repository sets up:
 # Initialize Terraform:
 terraform init
 # Review and apply the Terraform configuration:
+
 terraform plan
+
 terraform apply
+
 Access your EC2 instance and verify the setup.
 
 # Customization
@@ -37,6 +40,7 @@ Customize security groups, instance types, and other parameters as needed in the
 
 # Cleanup
 To avoid incurring charges, destroy the created resources when they are no longer needed:
+
 terraform destroy
 
 
