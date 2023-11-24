@@ -35,7 +35,7 @@ Modify the userdata.sh script to suit your specific setup requirements.
 Adjust the paths and commands in the Terraform files to reflect your configurations.
 Customize security groups, instance types, and other parameters as needed in the Terraform configuration files.
 
-Cleanup
+# Cleanup
 To avoid incurring charges, destroy the created resources when they are no longer needed:
 terraform destroy
 
