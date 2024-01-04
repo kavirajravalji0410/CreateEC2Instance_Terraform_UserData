@@ -2,6 +2,9 @@
 
 # Install Apache
 sudo yum install -y httpd
+sudo systemctl start httpd
+sudo systemctl enable httpd
+echo "<h1>EC2 Instance with UserData using Terraform </h1>" | sudo tee /var/www/html/dotnetproject/index.html
 
 # Install .NET Core 6.0
 sudo yum install -y dotnet-sdk-6.0
@@ -40,7 +43,7 @@ EOF
 # Reload systemd and start services
 sudo systemctl daemon-reload
 sudo systemctl enable kestrel-api.service
-sudo systemctl start kestrel-capi.service
+sudo systemctl start kestrel-api.service
 
 
 # Restart Apache
